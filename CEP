@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 10%;
+            background: #111c33;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        main {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        }
+
+        main h2 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 20px;
+        }
+
+        main h2 span {
+            color: #38bdf8;
+        }
+
+        main p {
+            max-width: 600px;
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 25px;
+            color: #38bdf8;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            flex: 1;
+            min-width: 220px;
+            max-width: 320px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: #263750;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111c33;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MeuSite</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <h2>Bem-vindo ao <span>meu site!</span></h2>
+
+        <p>
+            Este é o começo de um grande projeto.
+            Um site moderno, bonito e adaptado para celulares,
+            computadores e tablets.
+        </p>
+
+        <a class="botao" href="#sobre">Conheça mais</a>
+    </main>
+
+    <section id="sobre">
+        <h2>Sobre nós</h2>
+        <p>
+            Criamos experiências digitais com criatividade,
+            tecnologia e inovação.
+        </p>
+    </section>
+
+    <section id="servicos">
+        <h2>O que oferecemos</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🎨 Design</h3>
+                <p>Layouts modernos e visuais atraentes.</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Tecnologia</h3>
+                <p>Sites rápidos, funcionais e responsivos.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Inovação</h3>
+                <p>Ideias criativas para tirar seus projetos do papel.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 MeuSite — Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
